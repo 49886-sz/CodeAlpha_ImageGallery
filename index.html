@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Afghanistan Gallery | Provinces & Culture</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Poppins:wght@600;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="hero">
+    <h1>Afghanistan <span>Gallery</span></h1>
+    <p>A journey through provinces, culture, people, food & history</p>
+  </header>
+
+  <nav class="filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="provinces">Provinces</button>
+    <button class="filter-btn" data-filter="culture">Culture</button>
+    <button class="filter-btn" data-filter="people">People</button>
+    <button class="filter-btn" data-filter="food">Food</button>
+    <button class="filter-btn" data-filter="history">History</button>
+  </nav>
+
+  <main class="gallery" id="gallery">
+    <!-- Images injected by JavaScript -->
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lb-close" id="lbClose">&times;</button>
+    <button class="lb-nav lb-prev" id="lbPrev">&#10094;</button>
+    <div class="lb-wrapper">
+      <img src="" alt="" class="lb-img" id="lbImg" />
+      <p class="lb-caption" id="lbCaption"></p>
+    </div>
+    <button class="lb-nav lb-next" id="lbNext">&#10095;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
